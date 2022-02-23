@@ -1,0 +1,136 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.dashboard {
+	background-color: hsl(235, 21%, 11%);
+	height: 100vh;
+	width: 100vw;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.dashboard_background {
+	background-image: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-size: cover;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.dashboard_background img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: left;
+	opacity: 0.5;
+}
+
+.dashboard_container {
+	width: 50%;
+	max-width: 650px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	justify-content: center;
+}
+
+.dashboard_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.title {
+	letter-spacing: 10px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.todo_input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(235, 21%, 11%);
+	color: #fff;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.text_input {
+	width: 400px;
+	border-radius: 5px;
+}
+
+.text_input label {
+	color: rgba(255, 255, 255, 0.411);
+}
+
+.text_input  input{
+color: #fff;
+}
+.todo_btn {
+	background: linear-gradient(90deg, #bebaaf 0%, #1f1f1f 100%);
+}
+
+.todo_list {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 60%;
+	color: #fff;
+	z-index: 1;
+	margin-top: 260px;
+	border-radius: 6px;
+	display: flex;
+    
+}
+
+.todo_list > ul {
+	overflow-y: scroll;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 420px;
+    background-color: hsl(235, 24%, 19%);
+    margin-bottom: 5px;
+    border-radius: 6px;
+	z-index: 1;
+	color: #fff;
+    
+}
+
+
+.todo_list > ul::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.todo_list > ul {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+
+@media (max-width: 768px) {
+	.todo_list > ul {
+		width: 80%;
+	}
+
+	.todo_input{
+		width: 250px;
+	}
+}

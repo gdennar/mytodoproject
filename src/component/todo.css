@@ -1,0 +1,42 @@
+
+.btn_modal {
+	background: hsl(235, 24%, 19%) !important;
+	border: 1px solid #fff !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	margin-left: 20px !important;
+}
+
+.update_input {
+	width: 50%;
+}
+
+.update_box {
+	background: honeydew;
+	border-radius: 5px;
+	border: 1px solid #f76e11;
+}
+
+.complete {
+	text-decoration: line-through;
+    color: rgb(141, 141, 141);
+	margin-left: 30px;
+}
+
+.pending {
+	color: rgb(255, 255, 255);
+	margin-left: 30px;
+}
+
+.todo_item_list{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo_item_list:hover{
+    transform: translateY(-2px);
+	box-shadow: 0 0px 7px 0px hsl(235, 21%, 11%);
+    border-color: hsl(235, 24%, 19%);
+
+}
